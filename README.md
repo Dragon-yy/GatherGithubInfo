@@ -41,6 +41,14 @@ go mod download
 ```
 
 爬取字段包含
+
+
 ![img.png](img/img.png)
+
+
+## TODO
+
+ - 代理池创建
+ - 多线程优化
 
 
