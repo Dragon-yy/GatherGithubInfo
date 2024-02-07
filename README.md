@@ -16,7 +16,7 @@ go mod download
 ```
 2. 运行初始化命令
 ```shell
-❯ go run main.go init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
+❯ GatherGithubInfo init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
 ```
 
 3. 运行爬虫
@@ -30,15 +30,15 @@ go mod download
 ```
 单独爬取用户
 ```shell
-❯ go run main.go crawl -u=dragon-yy  
+❯ GatherGithubInfo crawl -u=dragon-yy  
 ```
 批量爬取用户
 ```shell
-❯ go run main.go crawl -s=2 -p=1 -e=3
+❯ GatherGithubInfo crawl -s=2 -p=1 -e=3
 ```
 指定github token爬取
 ```shell
-❯ go run main.go crawl -s=2 -p=1 -e=3 -t=xxxx
+❯ GatherGithubInfo crawl -s=2 -p=1 -e=3 -t=xxxx
 ```
 
 爬取字段包含
