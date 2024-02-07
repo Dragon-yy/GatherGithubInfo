@@ -10,16 +10,12 @@
 ![diagram.png](img%2Fdiagram.png)
 
 ## 使用
-1. 安装依赖
-```shell
-go mod download
-```
-2. 运行初始化命令
+
+1. 运行初始化命令
 ```shell
 ❯ GatherGithubInfo init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
 ```
-
-3. 运行爬虫
+2. 运行爬虫
 ```shell
   -e, --endnum int     The number of users you want to end crawling
   -h, --help           help for crawl
