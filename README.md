@@ -16,14 +16,7 @@
 ❯ GatherGithubInfo init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
 ```
 2. 运行爬虫
-```shell
-  -e, --endnum int     The number of users you want to end crawling
-  -h, --help           help for crawl
-  -p, --perpage int    The number of users you want to crawl perpage
-  -s, --startnum int   The number of users you want to start crawling
-  -t, --token string   The github token
-  -u, --user string    The single github user you want to crawl
-```
+
 单独爬取用户
 ```shell
 ❯ GatherGithubInfo crawl -u=dragon-yy  
@@ -36,8 +29,20 @@
 ```shell
 ❯ GatherGithubInfo crawl -s=2 -p=1 -e=3 -t=xxxx
 ```
+支持命令及含义如下
+
+```shell
+  -e, --endnum int     The number of users you want to end crawling
+  -h, --help           help for crawl
+  -p, --perpage int    The number of users you want to crawl perpage
+  -s, --startnum int   The number of users you want to start crawling
+  -t, --token string   The github token
+  -u, --user string    The single github user you want to crawl
+```
 
 爬取字段包含
+
+
 ![img.png](img/img.png)
 
 # TODO
