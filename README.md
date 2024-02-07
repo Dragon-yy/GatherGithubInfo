@@ -6,8 +6,7 @@
 3. 可用于批量爬取github注册用户数据
 4. 可检索提供的github token剩余查询次数
 
-## 原理
-![img.png](img/diagram.png)
+
 
 ## 使用
 1. 安装依赖
@@ -16,7 +15,7 @@ go mod download
 ```
 2. 运行初始化命令
 ```shell
-❯ GatherGithubInfo init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
+❯ go run main.go init -I 127.0.0.1 -P 3306 -u root -p 123456 -d github
 ```
 
 3. 运行爬虫
@@ -30,20 +29,18 @@ go mod download
 ```
 单独爬取用户
 ```shell
-❯ GatherGithubInfo crawl -u=dragon-yy  
+❯ go run main.go crawl -u=dragon-yy  
 ```
 批量爬取用户
 ```shell
-❯ GatherGithubInfo crawl -s=2 -p=1 -e=3
+❯ go run main.go crawl -s=2 -p=1 -e=3
 ```
 指定github token爬取
 ```shell
-❯ GatherGithubInfo crawl -s=2 -p=1 -e=3 -t=xxxx
+❯ go run main.go crawl -s=2 -p=1 -e=3 -t=xxxx
 ```
 
 爬取字段包含
 ![img.png](img/img.png)
 
-## TODO
-代理池创建
-多线程优化
+
