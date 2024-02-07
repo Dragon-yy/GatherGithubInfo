@@ -6,7 +6,8 @@
 3. 可用于批量爬取github注册用户数据
 4. 可检索提供的github token剩余查询次数
 
-
+## 原理
+![diagram.png](img%2Fdiagram.png)
 
 ## 使用
 1. 安装依赖
@@ -43,4 +44,8 @@ go mod download
 爬取字段包含
 ![img.png](img/img.png)
 
+# TODO
+
+ - 代理池创建 
+ - 多线程优化
 
